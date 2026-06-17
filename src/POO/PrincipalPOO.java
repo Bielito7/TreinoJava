@@ -14,5 +14,12 @@ public class PrincipalPOO {
     s.ExibirSaldo();
     s.ZerarSaldo();
     s.ExibirSaldo();
+
+    Aluno aluno = new Aluno();
+    aluno.nome = "Gabriel";
+    aluno.nota1 = 5.5;
+    aluno.nota2 = 9.0;
+    aluno.CalcularMedia();
+    aluno.ResultadoAluno();
     }
 }
