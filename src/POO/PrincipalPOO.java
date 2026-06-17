@@ -21,5 +21,11 @@ public class PrincipalPOO {
     aluno.nota2 = 9.0;
     aluno.CalcularMedia();
     aluno.ResultadoAluno();
+
+    Colaborador c = new Colaborador();
+    c.nome = "Jorge";
+    c.cargo = "Analista 1";
+    c.nivelDeAcesso = 1;
+    c.alterarDados(2,"Analista 2");
     }
 }
