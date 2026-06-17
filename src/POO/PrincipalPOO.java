@@ -1,5 +1,8 @@
 package POO;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrincipalPOO {
     static void main(String[] args) {
     Produto p = new Produto();
@@ -27,5 +30,21 @@ public class PrincipalPOO {
     c.cargo = "Analista 1";
     c.nivelDeAcesso = 1;
     c.alterarDados(2,"Analista 2");
+
+        Tarefa t1 = new Tarefa();
+        t1.descricao = "Estudar Banco de Dados";
+        t1.concluida = false;
+
+        Tarefa t2 = new Tarefa();
+        t2.descricao = "Fazer cursos GC";
+        t2.concluida = true;
+
+        List<Tarefa> lista = new ArrayList<>();
+        lista.add(t1);
+        lista.add(t2);
+
+        for(Tarefa t : lista) {
+            t.descricaoTarefa();
+        }
     }
 }
