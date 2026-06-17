@@ -46,5 +46,11 @@ public class PrincipalPOO {
         for(Tarefa t : lista) {
             t.descricaoTarefa();
         }
+
+        Estoque item = new Estoque();
+        item.quantidade = 10;
+        item.nome = "Calças";
+        item.vender(5);
+        item.vender(6);
     }
 }
