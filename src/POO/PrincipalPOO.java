@@ -7,5 +7,12 @@ public class PrincipalPOO {
     p.preco = 200.00;
     p.quantidade = 5;
     p.ExibirInformacoes();
+
+    Saldo s = new Saldo();
+    s.nome = "Gabriel";
+    s.saldo = 1350.500;
+    s.ExibirSaldo();
+    s.ZerarSaldo();
+    s.ExibirSaldo();
     }
 }
