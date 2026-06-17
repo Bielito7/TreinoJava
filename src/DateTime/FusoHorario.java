@@ -1,0 +1,15 @@
+package DateTime;
+
+import java.time.ZonedDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class FusoHorario {
+    public static void main(String[] args) {
+        ZonedDateTime horarioTokyo = ZonedDateTime.now(ZoneId.of("Asia/Tokyo"));  // ZonedDateTime obtem data e hora do fuso do sistema
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        String horarioFormatado = horarioTokyo.format(formatter);
+
+        System.out.println("Horário atual em Tóquio: " + horarioFormatado);
+    }
+}
